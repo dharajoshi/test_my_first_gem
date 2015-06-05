@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 gem 'sqlite3'
-gem 'dharajoshi_first_gem'#, '~> 0.1.4'
+gem 'dharajoshi_first_gem'
+gem 'jquery_image_gallery', '~> 0.2.6'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

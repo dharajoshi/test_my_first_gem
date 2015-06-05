@@ -13,4 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require dharajoshi_first_gem_main
+//= require jquery_image_gallery_main
 //= require_tree .
