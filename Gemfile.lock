@@ -52,6 +52,7 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mean_median_mode (0.2.3)
     mime-types (1.25.1)
     multi_json (1.11.0)
     polyglot (0.3.5)
@@ -109,6 +110,7 @@ DEPENDENCIES
   dharajoshi_first_gem
   jquery-rails
   jquery_image_gallery (~> 0.2.6)
+  mean_median_mode (~> 0.2.3)
   rails (= 3.2.11)
   sass-rails (~> 3.2.3)
   sqlite3

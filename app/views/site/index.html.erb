@@ -1,6 +1,20 @@
 <h1>Site#Index</h1>
 <p><%= "Current version of DharajoshiFirstGem gem :: #{DharajoshiFirstGem::VERSION}" %></p>
 <p><%= "Current version of JqueryImageGallery gem :: #{JqueryImageGallery::VERSION}" %></p>
+<p><%= "Current version of MeanMedianMode gem     :: #{MeanMedianMode::VERSION}" %></p>
+
+<%
+   mmz = MeanMedianMode::Base.new([5,15,20,25,25])
+   mean = mmz.mean_result
+   median = mmz.median_result
+   mode = mmz.mode_result
+%>
+
+<p><%= "Mean :: #{mean}" %></p>
+<p><%= "Median :: #{median}" %></p>
+<p><%= "Mode :: #{mode}" %></p>
+
+
 
 <!--<div>
 	<div>
@@ -16,36 +30,36 @@
 
 <!-- Jssor Slider Begin -->
 <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
-<div id="slider1_container" class="div_slider1">
-  <!-- Slides Container -->
-  <div u="slides" class="div_slides">
-    <div>
-      <a u=image href="#"><%= image_tag("landscape/01.jpg") %></a>
-      <div u=caption t="*" class="captionOrange div_caption">
-      	slideshow transition twins
-      </div>
-    </div>
-    <div>
-      <a u=image href="#"><%= image_tag("landscape/02.jpg") %></a>
-      <div u=caption t="*" class="captionOrange div_caption">
-      random caption transition
-      </div>
-    </div>
-    <div>
-      <a u=image href="#"><%= image_tag("landscape/03.jpg") %></a>
-      <div u=caption t="*" class="captionOrange div_caption">
-      mobile ready, touch swipe
-      </div>
-    </div>
-    <div>
-      <a u=image href="#"><%= image_tag("landscape/04.jpg") %></a>
-      <div u=caption t="*" class="captionOrange div_caption">
-      responsive, scale smoothly
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Jssor Slider End -->
-<script type="text/javascript">
-  jssor_slider1_starter('slider1_container');
-</script>
+<!--<div id="slider1_container" class="div_slider1">-->
+  <!--&lt;!&ndash; Slides Container &ndash;&gt;-->
+  <!--<div u="slides" class="div_slides">-->
+    <!--<div>-->
+      <!--<a u=image href="#"><%= image_tag("landscape/01.jpg") %></a>-->
+      <!--<div u=caption t="*" class="captionOrange div_caption">-->
+      	<!--slideshow transition twins-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div>-->
+      <!--<a u=image href="#"><%= image_tag("landscape/02.jpg") %></a>-->
+      <!--<div u=caption t="*" class="captionOrange div_caption">-->
+      <!--random caption transition-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div>-->
+      <!--<a u=image href="#"><%= image_tag("landscape/03.jpg") %></a>-->
+      <!--<div u=caption t="*" class="captionOrange div_caption">-->
+      <!--mobile ready, touch swipe-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div>-->
+      <!--<a u=image href="#"><%= image_tag("landscape/04.jpg") %></a>-->
+      <!--<div u=caption t="*" class="captionOrange div_caption">-->
+      <!--responsive, scale smoothly-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; Jssor Slider End &ndash;&gt;-->
+<!--<script type="text/javascript">-->
+  <!--jssor_slider1_starter('slider1_container');-->
+<!--</script>-->
